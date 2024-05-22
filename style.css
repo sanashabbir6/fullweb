@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+a:hover {
+    color: #51188b;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #292828;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #9027c1;
+    h
+}
+.home {
+    display: flex;
+    background: url(image/andras-vas-Bd7gNnWJBkU-unsplash.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+
+
+}
+
+.home_content {
+    max-width: 600px;
+}
+
+.home_content .subtitle {
+    letter-spacing: 2px;
+    color: #ededed;
+    font-weight: 700;
+    margin-bottom: .5rem;
+
+}
+
+.home_content .title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #ededed;
+    margin-bottom: 1rem;
+}
+
+.home_content .title span {
+    font-weight: 600;
+    color: #9027c1
+}
+
+.home_content .description {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.home_content .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+
+.btns a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #9027c1;
+    border: 2px solid #9027c1;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #290620;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btns .portfolio {
+    background: transparent;
+    color: #9027c1;
+}
+
+.btns .portfolio:hover {
+    color: #290620;
+}
+
+.btns .portfolio::before {
+    background: #9027c1;
+}
+
+.btns a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #290620;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btns a:hover {
+    color: #9027c1;
+}
+
+.btns a:hover::before {
+    width: 100%;
+}
+
+.home_icon {
+    position: absolute;
+    bottom: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_icon a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #9027c1;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #9027c1;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home_icon a:hover {
+    color: #290620;
+}
+
+.home_icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9027c1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home_icon a:hover::before {
+    width: 100%;
+}
+
+/* .home-imghover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    background: transparent;
+    transition: 1s;
+}
+
+.home-imghover:hover {
+    background: #381f32;
+} */
+#about {
+    display: inline-block;
+    min-height: 100vh;
+    background-color: black;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.about__content {
+    float: left;
+    width: 55%;
+}
+
+.about__image {
+    float: right;
+    width: 30%;
+}
+
+.about__image img {
+    width: 350px;
+    height: 350px;
+
+}
+
+.about__content .title_about {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #ededed;
+    margin-bottom: 1rem;
+}
+
+.about__content .title_about span {
+    color: #9027c1
+}
+
+.about__content .about__details {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.about__content .about__details span {
+    color: #9027c1;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#service {
+    display: inline-block;
+    min-height: 100vh;
+    background-color: black;
+    
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.section-heading {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-heading::after {
+    content: '';
+    width: 230px;
+    height: 4px;
+    background-color: #9027c1;
+    display: block;
+    margin: auto;
+}
+
+.service__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+
+}
+
+.service__card {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px ;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #9027c1;
+    background-color: #2c2a2a;
+	box-shadow: 0 0 10px rgba(228, 221, 221, 0.1);
+
+
+}
+
+.service__card:hover {
+    background-color: #493055;
+    transition: 0.4s ease;
+}
+
+.service__card i {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #9027c1;
+}
+
+.service__card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #efe8e8;
+}
+
+.service__card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #efe8e8;
+    line-height: 1.5;
+}
+
+.button {
+    font-size: 15px;
+    text-decoration: none;
+    color: #f4eff7;
+    background-color: #9027c1;;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    background-color: #e2d9ea;
+    transition: 0.4 ease;}
+
+#Contactus{
+    display: inline-block;
+    min-height: 100vh;
+    background-color: black;
+    width: 100%;
+} 
+.contact{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+    align-items: center;
+   
+} 
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #9027c1;
+}
+
+.container__contact{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+.container__contact .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container__contact .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container__contact .contactinfo .box .icon{
+min-width: 60px;
+height: 60px;
+background: #9027c1;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+
+}
+.container__contact .contactinfo .box .text{
+display: flex;
+margin-left: 20px;
+font-size: 15px;
+flex-direction: column;
+font-weight: 300;
+color: #fff;}
+.container__contact .contactinfo .box .text h3{
+font-weight: 500;
+color: #9027c1;}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contactform h2{
+    font-size: 20px;
+    color: #51188b;
+    font-weight: 600;
+}
+.contactform .inputbox{
+position: relative;
+width: 100%;
+margin-top: 10px;}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #9027c1;
+    outline: none;
+    resize: none
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #51188b;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #51188b;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #9027c1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer {
+	background-color: #9027c1;
+	padding: 1em;
+	text-align: center;
+	color: #fff;
+}
+
+    
